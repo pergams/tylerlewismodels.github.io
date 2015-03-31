@@ -203,7 +203,7 @@ MEDIA QUERIES
   }
 }
 
-@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
   .about {
     margin: 75px 100px;
   }
@@ -245,7 +245,7 @@ MEDIA QUERIES
   }
 }
 
-@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
   .panel, .latest {
     width: 100%;
     height: auto;
