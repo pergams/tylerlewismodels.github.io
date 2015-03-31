@@ -1,0 +1,293 @@
+body {
+  margin: 0px;
+}
+
+.all {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #B0B0B0;
+  font-size: 14px;
+}
+
+a:hover {
+  color: #222;
+}
+
+.logo-text a {
+  color: #222;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 30px;
+}
+
+.top-nav {
+  text-align: right;
+  margin-top: -45px;
+}
+
+header, footer {
+  margin: 35px 100px;
+}
+
+.menu {
+  text-align: right;
+}
+
+.menu-img {
+  height: 22.5px;
+  opacity: .35;
+  left: 100%;
+  display: none;
+}
+
+.menu-img:hover {
+  opacity: .95;
+}
+
+li {
+  display: inline;
+  font-family: 'Helvetica', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-left: 25px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+button {
+  background: none;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: none;
+}
+
+a, a:hover, button, button:hover, img, img:hover{
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  /* ...and now for the proper property */
+  transition:.25s;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.panel {
+  height: 500px;
+}
+
+.latest {
+  height: 500px;
+  position: relative;
+}
+
+.panel-nav {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+}
+
+.btn-prev, .btn-next {
+  padding: 25px 20px;
+  background-color: rgba(0,0,0,0.15);
+}
+
+.btn-prev:hover, .btn-next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.btn-next {
+  position: relative;
+  float: right;
+}
+
+.nav-img {
+  -webkit-filter: invert(100%) !important;
+  filter: invert(100%) !important; /* DOES NOT WORK IN FIREFOX */
+  width: 10px;
+}
+
+.social-link {
+  margin-right: 10px;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+.social-icon {
+  height: 15px;
+  display: inline-block;
+  opacity: .35;
+}
+
+.social-icon:hover {
+  opacity: .95;
+}
+
+.contact, .contact a{
+  text-align: right;
+  margin-top: -20px;
+  font-family: 'Helvetica', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #222;
+  font-size: 14px;
+}
+
+.email {
+  margin-bottom: 5px;
+}
+
+.active-link {
+  color: #222;
+}
+
+.about {
+  /*border: 1px solid #999;*/
+  margin: 75px auto;
+  text-align: center;
+}
+
+.about-content {
+  display: inline-block;
+  width: 35%;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-text {
+  vertical-align: top;
+  margin-left: 35px;
+  font-family: 'Helvetica', sans-serif;
+  color: #222;
+  text-align: left;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.about-text p {
+  color: #333;
+}
+
+.about-text h2, .about-text h3 {
+  font-weight: normal;
+  margin-top: 0px;
+}
+
+@media (max-width: 800px) {
+
+  .about {
+    margin: 75px 100px;
+  }
+
+  .about-content {
+    display: block;
+    width: 100%;
+  }
+  .about-text {
+    margin-left: 0px;
+    margin-top: 35px;
+  }
+  .social-links {
+    text-align: center;
+  }
+  .social-link {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .contact, .contact a{
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .email {
+    margin-bottom: 5px;
+  }
+
+  .top-nav {
+    display: none;
+  }
+
+  .menu-img {
+    display: block;
+    margin-top: -51px;
+    float: right;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .panel, .latest {
+    width: 100%;
+    height: auto;
+  }
+
+  header, footer {
+    margin: 35px 50px;
+  }
+  .about {
+    margin: 75px 50px;
+  }
+}
+
+/* --------------------------------
+-------------------------------- */
+
+.img-replace {
+  /* replace text with an image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  color: transparent;
+  white-space: nowrap;
+}
+
+
+.cd-popup-trigger {
+  display: block;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
+}
+
+.cd-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255,255,255,0.9);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.cd-popup.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.cd-popup-container {
+
+}

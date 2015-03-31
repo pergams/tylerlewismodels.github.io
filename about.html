@@ -1,0 +1,110 @@
+<html>
+<head>
+  <title>Tyler Lewis</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="everthing">
+
+    <div id="headerWrapper">
+      <header id="header">
+
+        <div class="logo">
+          <h1 class="logo-text">
+            <a href="index.html">Tyler Lewis</a>
+          </h1>
+        </div>
+
+        <a href="#0" class="menu cd-popup-trigger">
+          <div class="menu">
+            <img class="menu-img" src="img/menu.png" />
+          </div>
+        </a>
+
+        <div class="top-nav">
+          <nav class="main-nav">
+            <ul class="nav">
+              <li>
+                <a href="index.html">Latest</a>
+              </li>
+              <li class="active-link">
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="http://trvllhippster.tumblr.com/" target="_blank">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </header>
+    </div>
+
+    <div class="about">
+      <div class="about-content about-img-box"><img class="about-img"src="img/about.jpg" /></div>
+      <div class="about-content about-text">
+        <h2>Cool Guy</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h3>Experience</h3>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3>Skills</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consequat. </p>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="social-links">
+        <a href="#" target="_blank" class="social-link social-twitter"><img class="social-icon" src="img/twitter.png" /></a>
+        <a href="#" target="_blank" class="social-link social-linkedin"><img class="social-icon" src="img/linkedin.png" /></a>
+        <a href="#" target="_blank" class="social-link social-instagram"><img class="social-icon" src="img/instagram.png" /></a>
+      </div>
+
+      <div class="contact">
+        <div class="email">email: <a href="#">tylerlewis@gmail.com</a></div>
+        <div class="phone">phone: 1.818.374.0473</div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="cd-popup" role="alert">
+    <div class="cd-popup-container">
+      <a href="#0" class="cd-popup-close img-replace">Close</a>
+    </div> <!-- cd-popup-container -->
+  </div> <!-- cd-popup -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+  jQuery(document).ready(function($){
+  //open popup
+    $('.cd-popup-trigger').on('click', function(event){
+      event.preventDefault();
+      $('.cd-popup').addClass('is-visible');
+    });
+
+    //close popup
+    $('.cd-popup').on('click', function(event){
+      if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+        event.preventDefault();
+        $(this).removeClass('is-visible');
+      }
+    });
+    //close popup when clicking the esc keyboard button
+    $(document).keyup(function(event){
+      if(event.which=='27'){
+        $('.cd-popup').removeClass('is-visible');
+      }
+    });
+  });
+  </script>
+
+</body>
+</html>
