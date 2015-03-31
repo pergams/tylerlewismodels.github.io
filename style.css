@@ -358,21 +358,7 @@ RESPONSIVE NAV-BAR
 .no-touch .cd-popup-container .cd-buttons li:last-child a:hover {
   background-color: #c5ccd8;
 }
-.cd-popup-container .cd-popup-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-}
-.cd-popup-container .cd-popup-close::before, .cd-popup-container .cd-popup-close::after {
-  content: '';
-  position: absolute;
-  top: 12px;
-  width: 14px;
-  height: 3px;
-  background-color: #8f9cb5;
-}
+
 .cd-popup-container .cd-popup-close::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -396,28 +382,9 @@ RESPONSIVE NAV-BAR
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-@media only screen and (min-width: 1170px) {
-  .cd-popup-container {
-    margin: 8em auto;
-  }
-}
 
 
 
-
-
-
-
-
-
-.img-replace {
-  /* replace text with an image */
-  display: inline-block;
-  overflow: hidden;
-  text-indent: 100%;
-  color: transparent;
-  white-space: nowrap;
-}
 
 
 .cd-popup-trigger {
