@@ -3,7 +3,7 @@
   <title>Tyler Lewis</title>
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/style.css"/>
   <link rel="shortcut icon" href="favicon.ico">
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,900' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -22,140 +22,82 @@
           </h1>
         </div>
 
-        <a href="#0" class="menu cd-popup-trigger"><div class="menu"><img class="menu-img" src="img/menu.png" /></div></a>
-
-          <div class="top-nav">
-            <nav class="main-nav">
-              <ul class="nav">
-                <li class="active-link">
-                  <a href="#">Latest</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="http://trvllhippster.tumblr.com/" target="_blank">Blog</a>
-                </li>
-              </ul>
-            </nav>
+        <a href="#0" class="menu cd-popup-trigger">
+          <div class="menu">
+            <img class="menu-img" src="img/menu.png" />
           </div>
+        </a>
 
-        </header>
-      </div>
-
-      <div class="container latest">
-        <div class="slider variable-width">
-          <div class="panel-div"><img class="panel" src="img/img-4.jpg" /></div>
-          <div class="panel-div"><img class="panel" src="img/img-5.jpg" /></div>
-          <div class="panel-div"><img class="panel" src="img/img-3.jpg" /></div>
-          <div class="panel-div"><img class="panel" src="img/img-7.jpg" /></div>
-          <div class="panel-div"><img class="panel" src="img/img-6.jpg" /></div>
-          <div class="panel-div"><img class="panel" src="img/img-8.jpg" /></div>
-          <div class="panel-div"><img class="panel" src="img/img-9.jpg" /></div>
+        <div class="top-nav">
+          <nav class="main-nav">
+            <ul class="nav">
+              <li class="active-link">
+                <a href="#">Latest</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="http://trvllhippster.tumblr.com/" target="_blank">Blog</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
-        <div id='panelNav' class="panel-nav">
-        </div>
-      </div>
-
-      <footer id="footer">
-        <div class="social-links">
-          <a href="#" target="_blank" class="social-link social-twitter"><img class="social-icon" src="img/twitter.png" /></a>
-          <a href="#" target="_blank" class="social-link social-linkedin"><img class="social-icon" src="img/linkedin.png" /></a>
-          <a href="#" target="_blank" class="social-link social-instagram"><img class="social-icon" src="img/instagram.png" /></a>
-        </div>
-
-        <div class="contact">
-          <div class="email">email: <a href="#">lewistyler54@yahoo.com</a></div>
-          <div class="phone">phone: 1.818.374.0473</div>
-        </div>
-      </footer>
+      </header>
     </div>
 
-    <div class="cd-popup" role="alert">
-      <div class="cd-popup-container">
-        <ul class="mobile-nav">
-          <li class="mobile-nav-link">
-            <a href="#0" class="cd-popup-close">Latest</a>
-          </li>
-          <li class="mobile-nav-link">
-            <a href="about.html">About</a>
-          </li>
-          <li class="mobile-nav-link">
-            <a href="http://trvllhippster.tumblr.com/" target="_blank">Blog</a>
-          </li>
-        </ul>
-      </div> <!-- cd-popup-container -->
+    <div class="container latest">
+      <div class="slider variable-width">
+        <div class="panel-div"><img class="panel" src="img/img-3.jpg" /></div>
+        <div class="panel-div"><img class="panel" src="img/img-7.jpg" /></div>
+        <div class="panel-div"><img class="panel" src="img/img-6.jpg" /></div>
+        <div class="panel-div"><img class="panel" src="img/img-8.jpg" /></div>
+        <div class="panel-div"><img class="panel" src="img/img-9.jpg" /></div>
+        <div class="panel-div"><img class="panel" src="img/img-4.jpg" /></div>
+        <div class="panel-div"><img class="panel" src="img/img-5.jpg" /></div>
+      </div>
+
+      <div id='panelNav' class="panel-nav">
+      </div>
     </div>
 
-    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <footer id="footer">
+      <div class="social-links">
+        <a href="#" target="_blank" class="social-link social-twitter"><img class="social-icon" src="img/twitter.png" /></a>
+        <a href="#" target="_blank" class="social-link social-linkedin"><img class="social-icon" src="img/linkedin.png" /></a>
+        <a href="#" target="_blank" class="social-link social-instagram"><img class="social-icon" src="img/instagram.png" /></a>
+      </div>
 
-    <script type="text/javascript">
-    $("document").ready(function($){
-      handleSlick();
-      $(window).on("resize", handleSlick);
-    });
-    var handleSlick = function(){
-      if (($(window).width() < 800) && ($('.slick-initialized').length > 0)) {
-        clearButtons();
-        unslick();
-      }
-      else if (($(window).width() >= 800) && ($('.slick-initialized').length == 0)){
-        addButtons();
-        slick();
-      }
-    }
-    var unslick = function(){
-      $('.variable-width').slick('unslick');
-    }
+      <div class="contact">
+        <div class="email">email: <a href="#">lewistyler54@yahoo.com</a></div>
+        <div class="phone">phone: 1.818.374.0473</div>
+      </div>
+    </footer>
+  </div>
 
-    var slick = function(){
-      $('.variable-width').slick({
-        dots: false,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 1,
-        centerMode: true,
-        variableWidth: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        prevArrow: '.btn-prev',
-        nextArrow: '.btn-next',
-      });
-    };
+  <div class="cd-popup" role="alert">
+    <div class="cd-popup-container">
+      <ul class="mobile-nav">
+        <li class="mobile-nav-link">
+          <a href="#0" class="cd-popup-close">Latest</a>
+        </li>
+        <li class="mobile-nav-link">
+          <a href="about.html">About</a>
+        </li>
+        <li class="mobile-nav-link">
+          <a href="http://trvllhippster.tumblr.com/" target="_blank">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-    var addButtons = function(){
-      $('#panelNav').html("<button class='btn-prev'><img class='nav-img' src='img/prev.png' /></button><button class='btn-next'><img class='nav-img' src='img/next.png' /></button>");
-    }
-    var clearButtons = function(){
-      $('#panelNav').html('');
-    }
-
-    jQuery(document).ready(function($){
-  //open popup
-  $('.cd-popup-trigger').on('click', function(event){
-    event.preventDefault();
-    $('.cd-popup').addClass('is-visible');
-  });
-
-  //close popup
-  $('.cd-popup').on('click', function(event){
-    if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
-      event.preventDefault();
-      $(this).removeClass('is-visible');
-    }
-  });
-  //close popup when clicking the esc keyboard button
-  $(document).keyup(function(event){
-    if(event.which=='27'){
-      $('.cd-popup').removeClass('is-visible');
-    }
-  });
-});
-    </script>
+  <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="javascript/carousel.js"></script>
+  <script type="text/javascript" src="javascript/pop-up.js"></script>
 
   </body>
   </html>
