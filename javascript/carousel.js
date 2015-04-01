@@ -4,11 +4,11 @@ $("document").ready(function($){
 });
 
 var handleSlick = function(){
-  if (($(window).width() < 800) && ($('.slick-initialized').length > 0)) {
+  if (($(window).width() < 600) && ($('.slick-initialized').length > 0)) {
     clearButtons();
     unslick();
   }
-  else if (($(window).width() >= 800) && ($('.slick-initialized').length == 0)){
+  else if (($(window).width() >= 600) && ($('.slick-initialized').length == 0)){
     addButtons();
     slick();
   }
