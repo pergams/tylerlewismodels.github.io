@@ -34,7 +34,7 @@ var slick = function(){
 };
 
 var addButtons = function(){
-  $('#panelNav').html("<button class='btn-prev'><img class='nav-img' src='img/prev.png' /></button><button class='btn-next'><img class='nav-img' src='img/next.png' /></button>");
+  $('#panelNav').html("<button class='btn-prev'><i class='fa fa-angle-left nav-img'></i></button><button class='btn-next'><i class='fa fa-angle-right nav-img'></i></button>");
 }
 
 var clearButtons = function(){

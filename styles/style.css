@@ -101,18 +101,18 @@ a, a:hover, button, button:hover, img, img:hover{
 }
 
 .btn-prev, .btn-next {
-  padding: 20px 16px;
   background-color: rgba(0,0,0,0.05);
-  border-radius:
 }
 
 .btn-prev {
+  padding: 20px 20px 20px 16px;
   border-radius: 0px 2px 2px 0px;
   -moz-border-radius: 0px 2px 2px 0px;
   -webkit-border-radius: 0px 2px 2px 0px;
 }
 
 .btn-next {
+  padding: 20px 16px 20px 20px;
   border-radius: 2px 0px 0px 2px;
   -moz-border-radius: 2px 0px 0px 2px;
   -webkit-border-radius: 2px 0px 0px 2px;
@@ -127,7 +127,8 @@ a, a:hover, button, button:hover, img, img:hover{
 }
 
 .nav-img {
-  width: 10px;
+  color: #fff;
+  font-size: 24px !important;
 }
 
 .social-link {
