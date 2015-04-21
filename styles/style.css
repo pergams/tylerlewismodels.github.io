@@ -10,7 +10,7 @@ a, button {
   text-decoration: none;
 }
 
-a, .contact, .contact a, .about-text {
+.nav a, .contact, .contact a, .about-text {
   font-size: 14px;
 }
 
@@ -40,17 +40,9 @@ a:hover, .logo-text a, .about-text, .contact a {
   text-align: right;
 }
 
-.menu-img, .social-icon {
-  opacity: .35;
-}
-
-.menu-img {
+.menu {
   height: 22.5px;
   display: none;
-}
-
-.menu-img:hover, .social-icon:hover {
-  opacity: .95;
 }
 
 li, .contact, .contact a, .about-text {
@@ -130,7 +122,7 @@ a, a:hover, button, button:hover, img, img:hover{
   background-color: rgba(0,0,0,0.1);
 }
 
-.btn-next, .menu-img {
+.btn-next, .menu {
   float: right;
 }
 
@@ -140,23 +132,20 @@ a, a:hover, button, button:hover, img, img:hover{
 
 .social-link {
   margin-right: 10px;
+  font-size: 16px;
+  color: #C0C0C0;
 }
 
 footer {
   margin-top: 40px;
 }
 
-.social-icon {
-  height: 15px;
-  display: inline-block;
-}
-
-.contact, .contact a {
-  margin-top: -20px;
+.contact {
+  margin-top: -17px;
 }
 
 .email {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .about {
@@ -189,6 +178,10 @@ footer {
 MEDIA QUERIES
 -------------------------------- */
 
+.menu {
+  display: none;
+}
+
 @media (max-width: 1600px) {
   .panel {
     height: 500px;
@@ -199,13 +192,11 @@ MEDIA QUERIES
   }
 }
 
-@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
   header, footer {
     margin: 35px 50px;
   }
-}
 
-@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
   .about {
     margin: 75px 100px;
   }
@@ -214,14 +205,17 @@ MEDIA QUERIES
     display: block;
     width: 100%;
   }
+
   .about-text {
     margin-left: 0px;
     margin-top: 35px;
   }
+
   .social-links {
     text-align: center;
   }
-  .social-link {
+
+  .social-link a {
     margin-right: 5px;
     margin-left: 5px;
   }
@@ -235,10 +229,11 @@ MEDIA QUERIES
     display: none;
   }
 
-  .menu-img {
+  .menu {
     display: block;
-    margin-top: -51px;
+    margin-top: -26.8px;
     margin-bottom: 0px;
+    font-size: 28px;
   }
 
   .panel, .latest {
@@ -263,7 +258,7 @@ RESPONSIVE NAV-BAR
 .mobile-nav-link, .mobile-nav-link a {
   display: block;
   margin: 25px;
-  color: #666;
+  color: #222;
 }
 
 .mobile-nav-link a:hover {
