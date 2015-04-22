@@ -5,11 +5,11 @@ body {
 
 .fadein {
   opacity: 1;
-  -o-transition: 2s;
-  -ms-transition: 2s;
-  -moz-transition: 2s;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -o-transition: 4s;
+  -ms-transition: 4s;
+  -moz-transition: 4s;
+  -webkit-transition: 4s;
+  transition: 4s;
 }
 
 header, footer {
