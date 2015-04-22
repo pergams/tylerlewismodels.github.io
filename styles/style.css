@@ -1,10 +1,32 @@
 body {
   margin: 0px;
+  opacity: 0;
+}
+
+.fadein {
+  opacity: 1;
+  -o-transition: 2s;
+  -ms-transition: 2s;
+  -moz-transition: 2s;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 header, footer {
   margin: 35px 100px;
 }
+
+a, a:hover, button, button:hover, img, img:hover {
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
+}
+
+/* --------------------------------
+TEXT FORMATTING
+-------------------------------- */
 
 a, button {
   text-decoration: none;
@@ -32,23 +54,34 @@ a:hover, .logo-text a, .about-text, .contact a {
   text-transform: uppercase;
 }
 
-.top-nav {
-  margin-top: -45px;
+li, .contact, .contact a, .about-text {
+  font-family: 'Helvetica', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.about-img, .panel-nav, .cd-popup {
+  width: 100%;
+}
+
+.btn-next, .menu {
+  float: right;
 }
 
 .menu, .top-nav, .contact {
   text-align: right;
 }
 
-.menu {
-  height: 22.5px;
-  display: none;
+/* --------------------------------
+MAIN NAV BAR
+-------------------------------- */
+
+.top-nav {
+  margin-top: -45px;
 }
 
-li, .contact, .contact a, .about-text {
-  font-family: 'Helvetica', sans-serif;
-  letter-spacing: 1px;
-  font-weight: 300;
+.menu {
+  display: none;
 }
 
 li {
@@ -62,6 +95,18 @@ ul {
   margin: none;
 }
 
+/* --------------------------------
+SLIDESHOW IMAGES
+-------------------------------- */
+
+.panel, .latest {
+  height: 750px;
+}
+
+/* --------------------------------
+SLIDESHOW NAVIGATION
+-------------------------------- */
+
 button {
   background: none;
   border: none;
@@ -74,18 +119,6 @@ button:focus {
   outline: 0;
 }
 
-a, a:hover, button, button:hover, img, img:hover{
-  -o-transition:.25s;
-  -ms-transition:.25s;
-  -moz-transition:.25s;
-  -webkit-transition:.25s;
-  transition:.25s;
-}
-
-.panel, .latest {
-  height: 750px;
-}
-
 .latest, .btn-next {
   position: relative;
 }
@@ -94,10 +127,6 @@ a, a:hover, button, button:hover, img, img:hover{
   z-index: 1;
   position: absolute;
   top: 45%;
-}
-
-.about-img, .panel-nav, .cd-popup {
-  width: 100%;
 }
 
 .btn-prev, .btn-next {
@@ -122,14 +151,22 @@ a, a:hover, button, button:hover, img, img:hover{
   background-color: rgba(0,0,0,0.1);
 }
 
-.btn-next, .menu {
-  float: right;
-}
-
 .nav-img {
   color: #fff;
   font-size: 24px !important;
 }
+
+/* --------------------------------
+FOOTER
+-------------------------------- */
+
+footer {
+  margin-top: 40px;
+}
+
+/* --------------------------------
+SOCIAL MEDIA LINKS
+-------------------------------- */
 
 .social-link {
   margin-right: 10px;
@@ -137,9 +174,9 @@ a, a:hover, button, button:hover, img, img:hover{
   color: #C0C0C0;
 }
 
-footer {
-  margin-top: 40px;
-}
+/* --------------------------------
+CONTACT INFORMATION
+-------------------------------- */
 
 .contact {
   margin-top: -17px;
@@ -148,6 +185,10 @@ footer {
 .email {
   margin-bottom: 8px;
 }
+
+/* --------------------------------
+ABOUT
+-------------------------------- */
 
 .about {
   margin: 75px auto;
